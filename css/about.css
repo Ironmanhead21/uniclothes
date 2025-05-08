@@ -1,0 +1,217 @@
+ /* Hero section */
+ .hero {
+    height: 300px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://www.thespruce.com/thmb/TshBWZYeD9QiMCINEH-6MJ8MUig=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/clothing-racks-group-Leticia-Almeida-photo-04.jpg-93662e0b647a443f83bf8001308c11fd.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.breadcrumb a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Main content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.about-section {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.about-col {
+    flex: 1;
+}
+
+.about-col h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.about-col h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #888;
+}
+
+.about-col p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.team-section {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.team-content {
+    flex: 1;
+}
+
+.team-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.team-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 19rem;
+    width: 50px;
+    height: 2px;
+    background-color: #888;
+}
+
+.team-content p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+
+.team-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .team-content {
+    text-align: center;
+    max-width: 800px;
+  }
+  
+  .team-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .team-member {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .team-member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .team-member:hover img {
+    transform: scale(1.1);
+  }
+  
+  .team-member .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .team-member:hover .overlay {
+    opacity: 1;
+  }
+  
+  .team-member .overlay p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+
+  .references-section {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .references-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .references-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .references-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .references-section ul li a {
+    color: #0077C2;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .references-section ul li a:hover {
+    text-decoration: underline;
+    color: #005a99;
+  }

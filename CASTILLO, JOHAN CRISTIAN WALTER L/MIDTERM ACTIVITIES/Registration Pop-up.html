@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title> POP-UP </title>
+    <script language="javascript">
+      function disp()
+      {
+        var sno, fname, cs, sd;
+        sno = prompt("Enter your Student Number");
+        fname = prompt("Enter your Full Name");
+        cs = prompt("Enter your Course and Section");
+        sd = prompt("Enter your Subject Description");
+        document.writeln("<h2> Your Student Number is : </h2>" + sno.toUpperCase());
+        document.writeln("<h2> Your Full Name is : </h2>" + fname.toUpperCase());
+        document.writeln("<h2> Your Course and Section is : </h2>" + cs.toUpperCase());
+        document.writeln("<h2> Your Subject Description is : </h2>" + sd.toUpperCase());
+        document.close();
+        
+        
+        
+      }
+    </script>
+  </head>
+  <body onLoad="disp()">
+  </body>
+</html>

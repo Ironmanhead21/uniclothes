@@ -1,0 +1,174 @@
+
+<html>
+<head>
+    <title>ACTIVITY2</title>
+<style>
+
+body
+{
+    background-color:beige;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    margin-top: 3%;
+}
+body
+{
+  text-align: center;
+  
+}
+
+#l1,#l2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-top: 3%;
+}
+
+.p1,.p2{
+    background-color: aliceblue;
+    width: 40%;
+    height: 100%;
+    border-style: solid;
+    border-color: rgb(21, 17, 136);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.p1{
+    align-items: center;
+    text-align: center;
+}
+
+.p2{
+    padding-left: 50px;
+}
+
+input{
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button{
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+}
+
+#btn1{
+    background-color: green;
+    border: 2;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 16px;
+    cursor: pointer;
+    border-color: green;
+}
+
+
+#btn2{
+    background-color: crimson;
+    border: 2;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 16px;
+    cursor: pointer;
+    border-color: crimson;
+}
+
+#btn2:hover{
+    background-color:aliceblue;
+    border-style: solid;
+    border: 2;
+    border-color: crimson;
+    color: crimson;
+}
+
+#btn1:hover{
+    background-color: aliceblue;
+    border-style: solid;
+    border: 2;
+    border-color:green;
+    color: green);
+}
+#d1,#d2,#d3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+<script>
+  /*function n(){
+    const userInput = promt ("Please enter your name:");
+    document.getElementById("11").innerHTML = userInput;
+  }
+  
+*/
+function submitform()
+{
+
+var fname = document.myform.fname.value;
+var lname = document.myform.lname.value;
+var addr = document.myform.addr.value;
+var cn = document.myform.cn.value;
+
+
+document.getElementById("d1").innerHTML = "Name: " + fname + " " + lname;
+document.getElementById("d2").innerHTML = "Address: "+addr+" ";
+document.getElementById("d3").innerHTML = "Contact Number: "+cn+" ";
+
+}
+
+function clrfrm()
+{
+
+document.getElementById("myform").reset();
+
+}
+
+</script>
+</head>
+<body>
+ACTIVITY 2 <br>
+</h1>
+<h3>
+Name: CASTILLO, JOHAN CRISTIAN WALTER L. <br>
+Course and Section: BSIS 2D <br>
+</h3>
+    <div class="main">
+        <div class="p1">
+            <form name="myform" id="myform">
+                <h1>Enter your details</h1>
+                <input type="text" name="fname" placeholder="Enter first name">
+                <br><br>
+                <input type="text" name="lname" placeholder="Enter last name">
+                <br><br>
+                <input type="text" name="addr" placeholder="Enter your address">
+                <br><br>
+                <input type="number" name="cn" placeholder="Enter your contact number">
+            </form>
+            <div class="btns">
+                <button id="btn1" onclick="submitform()">Submit</button>
+                <button id="btn2" onclick="clrfrm()" value="Reset form">Clear</button>
+            </div>
+        </div>
+        <div class="p2">
+            <h1 id="l2">Your information</h1>
+            <h3 id="d1"></h3>
+            <h3 id="d2"></h3>
+            <h3 id="d3"></h3>
+        </div>
+    </div>
+</body>
+</html>

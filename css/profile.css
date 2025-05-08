@@ -1,0 +1,125 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-settings {
+  max-width: 1200px;
+  
+  margin: 0 auto;
+  margin-top: 4%; 
+  margin-bottom: 4%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+ 
+}
+
+.profile-settings h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.profile-form {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 100px; 
+  flex-wrap: wrap; 
+}
+
+.profile-form h2 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.profile-picture-frame {
+  width: 250px; 
+  height: 250px;
+  background: #e9ecef;
+  border: 2px dashed #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.profile-picture-frame img {
+  max-width: 100%;
+  max-height: 200%;
+  width: 250px; 
+  height: 250px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.profile-card {
+  text-align: center; 
+  margin: 0 auto; 
+  max-width: 300px; 
+}
+
+.profile-card h2 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.profile-card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* LOG OUT */
+
+.logout-container {
+  text-align: center;
+  margin-top: 60px;
+ 
+}
+
+.logout-btn {
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e14a4a;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #a82020; 
+}

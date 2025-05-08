@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LOG IN</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main {
+      background-color: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 320px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 24px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin: 12px 0 6px;
+      font-weight: 500;
+      color: #555;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    input[type="text"]:focus, input[type="password"]:focus {
+      border-color: #4a90e2;
+      box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+      outline: none;
+    }
+
+    .submit {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background-color: #4a90e2;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .submit:hover {
+      background-color: #3b7dd8;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <h1>Login</h1>
+    <form name="login" onsubmit="return validateForm();" method="post">
+      <label>Username:</label>
+      <input class="username" type="text" name="username" required>
+
+      <label>Password:</label>
+      <input class="password" type="password" name="password" required>
+
+      <input type="button" class="submit" value="Log In" name="submit" onclick="validate()">
+    </form>
+  </div>
+
+  <script>
+    function validate() {
+      var user = document.login.username.value;
+      var password = document.login.password.value;
+      var usernameArray = ["Juhan"];
+      var passwordArray = ["123"];
+      var valid = false;
+
+      for (var i = 0; i < usernameArray.length; i++) {
+        if (user === usernameArray[i] && password === passwordArray[i]) {
+          valid = true;
+          break;
+        }
+      }
+
+      if (valid) {
+        alert("Login was successful");
+        window.location.href = "College distinction.html";
+      } else {
+        alert("Incorrect username or password");
+      }
+    }
+  </script>
+</body>
+</html>

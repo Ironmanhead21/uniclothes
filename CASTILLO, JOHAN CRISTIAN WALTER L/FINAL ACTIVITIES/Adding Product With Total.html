@@ -1,0 +1,113 @@
+
+<html>
+<head>
+  <title>Product</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .main {
+   
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 20px;
+    }
+    #column1 {
+  flex: 1;
+  background-color: #fff;
+}
+    
+    button {
+      margin-bottom: 15px;
+      padding: 8px 12px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .column2 {
+  width: 300px;
+  background-color: #f8f8f8;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  min-height: 300px; /* optional minimum height */
+  display: flex;
+  flex-direction: column;
+}
+
+#cart {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+#total {
+  position: sticky;
+  bottom: 0;
+  background-color: #fff;
+  padding: 10px;
+  border-top: 2px solid #ccc;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+   
+  </style>
+</head>
+<body>
+  <h3> ACTIVITY 5 - PRODUCT TOTAL <br> Name: Juhan <br> Course and Section: BSIS-2D </h3>
+  <div class="main">
+    
+      
+    <div id="column1">
+      <h1>Products Total</h1>
+      <p> T-Shirt - 1,500 </p>
+      <button onclick="addToCart('T-Shirt', 1500)"> Add to cart</button>
+      <p> Short - 2,000 </p>
+      <button onclick="addToCart('Short', 2000)"> Add to cart</button>
+      <p> Pants - 3000 </p>
+      <button onclick="addToCart('Pants', 3000)"> Add to cart</button>
+    </div><div class="column2">
+    <h2>Your Cart</h2>
+    <ul id="cart"></ul>
+    <p id="total">Total: ₱0</p>
+  </div>
+    
+  </div>
+  
+  <script>
+    const cart = [];
+    function addToCart(productName, price) {
+      cart.push({ name: productName, price: price });
+      showCart();
+    }
+    function showCart() {
+      const cartList = document.getElementById('cart');
+      const totalElement = document.getElementById('total');
+      cartList.innerHTML = '';
+      let total = 0;
+      cart.forEach((item) => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${item.name} - ${item.price}`;
+        cartList.appendChild(listItem);
+        total += item.price;
+      });
+      totalElement.textContent = `Total: ${total}`;
+    }
+  </script>
+</body>
+</html>
