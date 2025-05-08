@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UNICLOTHES</title>
+  <link rel="stylesheet" href="/css/home.css"/>
+  <link rel="stylesheet" href="/css/product.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="home img/logo/logo.png"  type="image/x-icon" >
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  
+</head>
+<body>
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+  <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="home img\anon\news.png" alt="News letter" width="400" height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+
+            <p class="newsletter-desc">
+              Subscribe the <b>Uniclothes</b> to get latest products and discount update.
+            </p>
+
+          </div>
+
+          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+
+          <button type="submit" class="btn-newsletter">Subscribe</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="P1\Thug Life Bucket Hat\thug-life-bucket-hat.jpg" alt="Rose Gold Earrings" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Someone in new just bought
+      </p>
+
+      <p class="toast-title">
+        Thug Life Hat
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 Minutes</time> ago
+      </p>
+
+    </div>
+
+  </div>
+
+
+     <!--
+    - HEADER
+  -->
+  <header>
+    <nav class="navbar">
+      <a href="#" class="header-logo">
+        <img src="home img\logo\logo.png" alt="Uniclothing" width="160" height="160">
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="listofacvtivity.html">List of Activity</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="profile.html" title="Profile">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+       
+          
+    </nav>
+  </header>
+  <main>
+    <!-- Carousel Section -->
+<div class="carousel">
+  <div class="list">
+      <div class="item">
+          <img src="home img\carousel\slider-bg.jpg" alt="Slider Image 1">
+          <div class="content">
+              <div class="trend">New Arrivals</div>
+              <div class="title">Fresh Drops</div>
+              <div class="des">
+                Be the first to shop the latest trends.
+              </div>
+              <div class="buttons">
+                  <button onclick="window.location.href='product.html'">BUY NOW</button>
+                  
+              </div>
+          </div>
+      </div>
+      <div class="item">
+          <img src="home img\carousel\2.jpg" alt="Slider Image 2">
+          <div class="content">
+              <div class="trend">Best Sellers</div>
+              <div class="title">Top Picks</div>
+              <div class="des">
+                Our most loved pieces, all in one place.
+              </div>
+              <div class="buttons">
+                  <button  onclick="window.location.href='product.html'">BUY NOW</button>
+                
+              </div>
+          </div>
+      </div>
+
+      <div class="item">
+          <img src="home img\carousel\tshirtw.jpeg" alt="Slider Image 3">
+          <div class="content">
+              <div class="trend">Seasonal Collection</div>
+              <div class="title">Summer Vibes</div>
+              <div class="des">
+                Stay stylish and cool with this season’s must-haves.
+              </div>
+              <div class="buttons">
+                  <button  onclick="window.location.href='product.html'">BUY NOW</button>
+                 
+              </div>
+          </div>
+      </div>
+      <div class="item">
+          <img src="home img\carousel\poloshirt.jpg" alt="Slider Image 4">
+          <div class="content">
+              <div class="trend">Premium Collection</div>
+              <div class="title">Luxury Edit</div>
+              <div class="des">
+                Elevate your wardrobe with premium designs.
+              </div>
+              <div class="buttons">
+                  <button  onclick="window.location.href='product.html'">BUY NOW</button>
+                 
+              </div>
+          </div>
+      </div>
+      <div class="item">
+          <img src="home img\carousel\cargo.jpg" alt="Slider Image 5">
+          <div class="content">
+              <div class="trend">Exclusive Deals / Sale</div>
+              <div class="title">Special Deals</div>
+              
+              <div class="des">
+                Limited-time discounts on your favorite styles.
+              </div>
+              <div class="buttons">
+                  <button  onclick="window.location.href='product.html'">BUY NOW</button>
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- thumbnail -->
+  <div class="thumbnail">
+      <div class="item">
+          <img src="home img\carousel\slider-bg.jpg" alt="Thumbnail Image 1">
+          <div class="content">
+              <div class="title">
+                New Arrivals
+              </div>
+              <div class="description">
+                Fresh Drops
+              </div>
+          </div>
+      </div>
+
+      <div class="item">
+          <img src="home img\carousel\2.jpg" alt="Thumbnail Image 2">
+          <div class="content">
+              <div class="title">
+                Best Sellers
+              </div>
+              <div class="description">
+                Top Picks
+              </div>
+          </div>
+      </div>
+
+      <div class="item">
+          <img src="home img\carousel\tshirtw.jpeg" alt="Thumbnail Image 3">
+          <div class="content">
+              <div class="title">
+                Seasonal Collection 
+              </div>
+              <div class="description">
+                Summer Vibes
+              </div>
+          </div>
+      </div>
+
+      <div class="item">
+          <img src="home img\carousel\poloshirt.jpg" alt="Thumbnail Image 4">
+          <div class="content">
+              <div class="title">
+                Premium Collection
+              </div>
+              <div class="description">
+                Luxury Edit
+              </div>
+          </div>
+      </div>
+
+      <div class="item">
+          <img src="home img\carousel\cargo.jpg" alt="Thumbnail Image 5">
+          <div class="content">
+              <div class="title">
+                Exclusive Deals / Sale
+              </div>
+              <div class="description">
+                Special Deals
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="arrows">
+      <button id="prev">&lt;</button>
+      <button id="next">&gt;</button>
+  </div>
+  <div class="time"></div>
+</div>
+
+    
+
+    <!-- WHY SECTION -->
+    <section class="why-shop">
+      <h2 class="section-title">WHY SHOP WITH US</h2>
+      <div class="icon-container">
+        
+        <!-- Fast Delivery -->
+        <div class="icon-box">
+          <img src="home img\logo\deliver.png" alt="Fast Delivery Icon">
+          <h5>Fast Delivery</h5>
+          <p>Get your items delivered quickly and safely.</p>
+        </div>
+    
+        <!-- Free Shipping -->
+        <div class="icon-box">
+          <img src="home img\logo\free.png" alt="Free Shipping Icon">
+          <h5>Free Shipping</h5>
+          <p>Enjoy free shipping on all orders.</p>
+        </div>
+    
+        <!-- Best Quality -->
+        <div class="icon-box">
+          <img src="home img\logo\best.png" alt="Best Quality Icon">
+          <h5>Best Quality</h5>
+          <p>We offer only the best quality products.</p>
+        </div>
+    
+      </div>
+    </section>
+
+    <!-- OFFER SECTION -->
+    <section class="special-offers">
+      <div class="offer-row">
+        <div class="product-offer">
+          <img src="home img\offer\item-4.jpg" alt="Offer 1" />
+          <div class="offer-text">
+            <h6>Save 20%</h6>
+            <h3>Special Offer</h3>
+            <a href="product.html" class="offer-btn">Shop Now</a>
+          </div>
+        </div>
+        <div class="product-offer">
+          <img src="home img\offer\6.jpg" alt="Offer 2" />
+          <div class="offer-text">
+            <h6>Save 20%</h6>
+            <h3>Special Offer</h3>
+            <a href="product.html" class="offer-btn">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT SECTION -->
+<div class="hproduct-section">
+  <h1 class="hproduct-title">Sale 20% Off On Everything</h1>
+  <p class="hproduct-description">Upgrade your style today with our premium collection. Limited stocks only!</p>
+  <p class="hproduct-price">₱990</p>
+
+  <!-- Countdown Timer -->
+  <div class="countdown-timer">
+    <div class="time-box" id="days"><span>00</span><br>Days</div>
+    <div class="time-box" id="hours"><span>00</span><br>Hours</div>
+    <div class="time-box" id="minutes"><span>00</span><br>Minutes</div>
+    <div class="time-box" id="seconds"><span>00</span><br>Seconds</div>
+  </div>
+
+  <a href="product.html" class="shop-now-btn">Shop Now</a>
+</div>
+    
+
+    <!-- ===== FEATURED PRODUCTS SECTION ===== -->
+<section class="featured-products">
+  <h3 class="section__title"><span>Featured</span> Products</h3>
+  <div class="hproduct-grid">
+    <div class="hproduct-card">
+      <img src="P1/Basic Hanf T-Shirt _ Men Casual Fit _/DH233_a_black-me.jpg" alt="Product 1" />
+      <h3>Basic Hanf T-Shirt</h3>
+      <p class="product-price">₱200</p>
+      <button class="btn-details"  onclick="window.location.href='product.html'">SHOP NOW</button>
+    </div>
+    <div class="hproduct-card">
+      <img src="P1/DRY Stretch Easy Shorts/goods_08_464823_3x4.webp" alt="Product 2" />
+      <h3>DRY Stretch Easy Shorts</h3>
+      <p class="product-price">₱100</p>
+      <button class="btn-details"  onclick="window.location.href='product.html'">SHOP NOW</button>
+    </div>
+    <div class="hproduct-card">
+      <img src="P1/Leather Sleeve Varsity Jacket/Leather-Sleeve-Varsity-Jacket_3.jpg" alt="Product 3" />
+      <h3>Leather Sleeve Varsity Jacket</h3>
+      <p class="product-price">₱500</p>
+      <button class="btn-details"  onclick="window.location.href='product.html'">SHOP NOW</button>
+    </div>
+    <div class="hproduct-card">
+      <img src="P1/Red Varsity Jacket/red-varsity-jacket.jpg" alt="Product 4" />
+      <h3>Red Varsity Jacket</h3>
+      <p class="product-price">₱550</p>
+      <button class="btn-details"  onclick="window.location.href='product.html'">SHOP NOW</button>
+    </div>
+    <!-- Add more product-cards as needed -->
+  </div>
+</section>
+
+ 
+  </main>
+
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2>UNICLOTHES</h2>
+      <p>&copy; 2025 Uniclothes. All rights reserved.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="activity.html">List of Activity</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="profile.html">Profile Settings</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script src="product.js"></script>
+  
+   <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

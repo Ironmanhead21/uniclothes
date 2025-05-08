@@ -1,0 +1,139 @@
+[
+    {
+        "id": 1,
+        "name":"Basic Hanf T-Shirt _ Men Casual Fit",
+        "price": 200,
+        "image":"P1/Basic Hanf T-Shirt _ Men Casual Fit _/DH233_a_black-me.jpg",
+        "description": "Comfortable fit: The design of the t-shirt is form-fitting, which can show off your body shape well and feels very comfortable to wear. It is suitable for various occasions."
+    },
+    {
+        "id": 2,
+        "name":"DRY Stretch Easy Shorts",
+        "price": 100,
+        "image":"P1/DRY Stretch Easy Shorts/goods_08_464823_3x4.webp",
+        "description": "Quick-Dry & Moisture-Wicking &Lightweight & Breathable for Maximum Flexibility.Made from high-performance fabric."
+    },
+    {
+        "id": 3,
+        "name":"Leather Sleeve Varsity Jacket",
+        "price": 500,
+        "image":"P1/Leather Sleeve Varsity Jacket/Leather-Sleeve-Varsity-Jacket_3.jpg",
+        "description": "This letterman jacket designed for the slim fit style, especially the sleeves are mainly fit in most persons. The buttons on the varsity jacket are of high quality, not easy to loose or fall. The cut of the neck area is very gentle which make you feel comfortable."
+    },
+    {
+        "id": 4,
+        "name":"Red Varsity Jacket",
+        "price": 550,
+        "image":"P1/Red Varsity Jacket/red-varsity-jacket.jpg",
+        "description": "Each unique points of these baseball jackets make looking good in your clothes without looking too flashy"
+    },
+    {
+        "id": 5,
+        "name":"Sage Varsity Jacket",
+        "price": 600,
+        "image":"P1/Sage Varsity Jacket/Vintage-Varsity-Jacket_8.jpg",
+        "description": "Vintage Varsity Jacket"
+    },
+    {
+        "id": 6,
+        "name":"Streetwear Color Block Hoodie",
+        "price": 200,
+        "image":"P1/Streetwear Color Block Hoodie/coffee-streetwear-color-block-hoodie.jpg",
+        "description": ""
+    },
+    {
+        "id": 7,
+        "name":"Thug Life Bucket Hat",
+        "price": 1000,
+        "image":"P1/Thug Life Bucket Hat/thug-life-bucket-hat.jpg",
+        "description": "Our Thug Life Bucket Hat embodies the rebellious spirit of streetwear, paying homage to the culture that's as bold and fearless as you are. Crafted with a keen eye for style and comfort, this hat is the perfect accessory to express your individuality."
+    },
+    {
+        "id": 8,
+        "name":"Cartoon Astronaut Polo-Shirts",
+        "price": 500,
+        "image":"product/Cartoon Astronaut T-Shirts.jpg",
+        "description": ""
+    },
+    {
+        "id": 9,
+        "name":"Chen Sweater",
+        "price": 216,
+        "image":"product/col7/Chen Sweater.jpg",
+        "description": ""
+    },
+    {
+        "id": 10,
+        "name":"Henley Shirt",
+        "price": 1000,
+        "image":"product/col8/Henley Shirt.jpg",
+        "description": ""
+    },
+    {
+        "id": 11,
+        "name":"Blouse",
+        "price": 150,
+        "image":"product/Blouse.png",
+        "description": ""
+    },
+    {
+        "id": 12,
+        "name":"Pants",
+        "price": 300,
+        "image":"product/c_pant_girl.png",
+        "description": "Pants for Girls"
+    },
+    {
+        "id": 13,
+        "name":"Noragi Jacket",
+        "price": 8000,
+        "image":"product/Noragi Jacket.png",
+        "description": "Our best-selling Noragi Jacket in a patterned Indigo fabric. Japanese cotton woven for season-less weight."
+    },
+    {
+        "id": 14,
+        "name":"Element Pattern Print Shirts",
+        "price": 160,
+        "image":"product/Element Pattern Print Shirts.jpg",
+        "description": ""
+    },
+    {
+        "id": 15,
+        "name":"Long Cardigans & Knitted Cardigans",
+        "price": 580,
+        "image":"product/Long Cardigans & Knitted Cardigans.jpg",
+        "description": ""
+    },
+    {
+        "id": 16,
+        "name":"Men's Summer Shirt Lapel Short Sleeve",
+        "price": 300,
+        "image":"product/Men's Summer Shirt Lapel Short Sleeve .jpg",
+        "description": ""
+    },
+    {
+        "id": 17,
+        "name":"Mustard cotton dress",
+        "price": 500,
+        "image":"product/Mustard cotton dress.jpg",
+        "description": ""
+    },
+    {
+        "id": 18,
+        "name":"Plain Striola Shirts",
+        "price": 300,
+        "image":"product/Plain Striola Shirts.jpg",
+        "description": ""
+    
+    },
+    {
+        "id": 19,
+        "name":"River Island Brown faux fur longline coat",
+        "price": 300,
+        "image":"product/River Island Brown faux fur longline coat.jpg",
+        "description": ""
+    
+    }
+
+
+]

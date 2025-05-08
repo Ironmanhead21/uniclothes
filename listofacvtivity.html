@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>UNICLOTHING</title>
+    <link rel="stylesheet" href="/css/home.css"/>
+  <link rel="stylesheet" href="/css/product.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!--
+      - favicon
+    -->
+    <link rel="shortcut icon" href="home img/logo/logo.png"  type="image/x-icon" >
+    <!--
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+    
+  </head>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .activity-section {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .activity-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: var(--sand); 
+    }
+
+    #category-buttons button,
+    #activity-list button {
+      padding: 12px 25px;
+      font-size: 1rem;
+      color: #fff;
+      background-color: var(--accent-gold); 
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #category-buttons button:hover,
+    #activity-list button:hover {
+      background-color: #574d4e; 
+      transform: translateY(-2px);
+    }
+
+    #activity-list ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+
+    #activity-list ul li {
+      margin: 15px 0;
+    }
+
+    #activity-viewer iframe {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#" class="header-logo">
+        <img src="home img\logo\logo.png" alt="Uniclothing" width="160" height="160">
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listofacvtivity.html" class="active">List of Activity</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="profile.html" title="Profile">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+       
+          
+    </nav>
+  </header>
+
+  <main>
+    <section class="activity-section">
+      <h3 class="section__title"><span>List of</span> Activity</h3>
+      <div id="category-buttons">
+        <button onclick="showActivities('midterm')">Midterm Activity</button>
+        <button onclick="showActivities('final')">Final Activity</button>
+      </div>
+
+      <div id="activity-list" style="display: none;">
+        <button onclick="goBack()">Back</button>
+        <ul id="activities"></ul>
+      </div>
+
+      <div id="activity-viewer" style="display: none;">
+        <button onclick="goBackToList()">Back</button>
+        <iframe id="activity-frame" src="" frameborder="0" style="width: 100%; height: 500px;"></iframe>
+      </div>
+    </section>
+  </main>
+
+  
+</main>
+
+<footer class="footer">
+<div class="footer-container">
+  <div class="footer-logo">
+    <h2>UNICLOTHES</h2>
+    <p>&copy; 2025 Uniqclothes. All rights reserved.</p>
+  </div>
+  <div class="footer-links">
+    <h4>Quick Links</h4>
+    <ul>
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="activity.html" class="active">List of Activity</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="profile.html">Profile Settings</a></li>
+    </ul>
+  </div>
+  <div class="footer-social">
+    <h4>Follow Us</h4>
+    <div class="social-icons">
+      <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+</div>
+</footer>
+
+<script src="script.js"></script>
+<script src="product.js"></script>
+ <!--
+  - ionicon link
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    const activities = {
+      midterm: [
+        { name: "Helloworld", link: "CASTILLO, JOHAN CRISTIAN WALTER L/MIDTERM ACTIVITIES/Helloworld.html" },
+        { name: "Registration Form", link: "CASTILLO, JOHAN CRISTIAN WALTER L/MIDTERM ACTIVITIES/Registration Form.html" },
+        { name: "Registration Pop-up", link: "CASTILLO, JOHAN CRISTIAN WALTER L/MIDTERM ACTIVITIES/Registration Pop-up.html" }
+      ],
+      final: [
+        { name: "Grade Distinction", link: "CASTILLO, JOHAN CRISTIAN WALTER L/FINAL ACTIVITIES/Grade Distinction.html" },
+        { name: "College Distinction", link: "CASTILLO, JOHAN CRISTIAN WALTER L/FINAL ACTIVITIES/Collage Distinction.html" },
+        { name: "Adding Product", link: "CASTILLO, JOHAN CRISTIAN WALTER L/FINAL ACTIVITIES/Adding Product.html" },
+        { name: "Adding Product With Total", link: "CASTILLO, JOHAN CRISTIAN WALTER L/FINAL ACTIVITIES/Adding Product With Total.html" },
+        { name: "Login", link: "CASTILLO, JOHAN CRISTIAN WALTER L/FINAL ACTIVITIES/Login.html" }
+      ]
+    };
+
+    function showActivities(category) {
+      document.getElementById('category-buttons').style.display = 'none';
+      document.getElementById('activity-list').style.display = 'block';
+
+      const activityList = document.getElementById('activities');
+      activityList.innerHTML = '';
+
+      activities[category].forEach(activity => {
+        const li = document.createElement('li');
+        const button = document.createElement('button');
+        button.textContent = activity.name;
+        button.onclick = () => viewActivity(activity.link);
+        li.appendChild(button);
+        activityList.appendChild(li);
+      });
+    }
+
+    function viewActivity(link) {
+      document.getElementById('activity-list').style.display = 'none';
+      document.getElementById('activity-viewer').style.display = 'block';
+      document.getElementById('activity-frame').src = link;
+    }
+
+    function goBack() {
+      document.getElementById('activity-list').style.display = 'none';
+      document.getElementById('category-buttons').style.display = 'block';
+    }
+
+    function goBackToList() {
+      document.getElementById('activity-viewer').style.display = 'none';
+      document.getElementById('activity-list').style.display = 'block';
+    }
+  </script>
+
+  
+</body>
+</html>
